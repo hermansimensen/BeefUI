@@ -1,0 +1,9 @@
+FileVersion = 1
+
+[Project]
+Name = "BeefUI"
+TargetType = "BeefLib"
+StartupObject = "BeefUI.Program"
+
+[Configs.Debug.Win64]
+BuildKind = "StaticLib"
