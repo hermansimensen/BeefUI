@@ -10,7 +10,7 @@ namespace BeefUI.OpenGL
 			but that is likely not gonna be an issue in reality as long as we aren't using two graphics cards with differing drivers at the same time.
 		*/
 
-		public static void InitOpenGL()
+		public static Result<void> InitOpenGL()
 		{
 #if BF_PLATFORM_WINDOWS
 			WNDCLASS wnd;
@@ -22,9 +22,10 @@ namespace BeefUI.OpenGL
 
 			uint16 c = RegisterClassA(&wnd);
 			if(c != 0)
-			{
 				CreateWindowExA(0L, wnd.lpszClassName, "test", 0x00000000L, 0, 0, 640, 480, null, null, wnd.hInstance, null);
-			}
+			else return .Err;
+
+			return .Ok;
 #endif
 		}
 
