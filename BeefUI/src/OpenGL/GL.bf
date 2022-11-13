@@ -1,6 +1,6 @@
 using System;
 
-namespace UI.OpenGL
+namespace BeefUI.OpenGL
 {
     class GL
 	{

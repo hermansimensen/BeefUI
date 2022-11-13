@@ -1,4 +1,4 @@
-namespace UI
+namespace BeefUI
 {
 	using System;
 	using System.Diagnostics;

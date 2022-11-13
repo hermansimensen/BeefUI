@@ -1,8 +1,8 @@
-namespace UI.OpenGL
+namespace BeefUI.OpenGL
 {
 	using System;
 	using System.Collections;
-	using UI.OpenGL;
+	using BeefUI.OpenGL;
 
 	static class ShaderManager
 	{
